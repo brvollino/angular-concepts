@@ -1,6 +1,6 @@
 <nav class="nav navbar-light bg-info">
-  <a class="nav-link active">Home</a>
-  <a class="nav-link">Login</a>
-  <a class="nav-link">Shop</a>
-  <a class="nav-link">Admin</a>
+  <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+  <a class="nav-link" [routerLink]="['/login']" routerLinkActive="active">Login</a>
+  <a class="nav-link" [routerLink]="['/shop']" routerLinkActive="active">Shop</a>
+  <a class="nav-link" [routerLink]="['/admin']" routerLinkActive="active">Admin</a>
 </nav>
