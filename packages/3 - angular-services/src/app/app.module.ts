@@ -9,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { AuthenticatedAreaComponent } from './authenticated-area/authenticated-area.component';
 import { View403Component } from './view403/view403.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { View403Component } from './view403/view403.component';
     LoginComponent,
     AdminComponent,
     AuthenticatedAreaComponent,
-    View403Component
+    View403Component,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
