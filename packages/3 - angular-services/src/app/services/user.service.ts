@@ -28,4 +28,12 @@ export class UserService {
   saveUser(user: User): Observable<any> {
     return this.http.post<void>(`${environment.apiUrl}/users`, user);
   }
+
+  putUser(user: User): Observable<any> {
+    return this.http.put<void>(`${environment.apiUrl}/users/${user.id}`, user);
+  }
+
+  deleteUser(id: number): Observable<any> {
+    return this.http.delete<void>(`${environment.apiUrl}/users/${id}`);
+  }
 }
