@@ -1,0 +1,9 @@
+<p>customer works!</p>
+
+<nav class="nav navbar-dark bg-info">
+  <a class="nav-link" [routerLink]="['/customer/user-detail']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">User</a>
+  <a class="nav-link" [routerLink]="['/customer/credit']" routerLinkActive="active">Credit</a>
+  <a class="nav-link" [routerLink]="['/customer/user-list']" routerLinkActive="active">User list</a>
+</nav>
+
+<router-outlet></router-outlet>
