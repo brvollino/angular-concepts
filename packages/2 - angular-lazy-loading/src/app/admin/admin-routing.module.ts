@@ -11,6 +11,11 @@ const routes: Routes = [
     component: AdminComponent,
     children: [
       {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'registers'
+      },
+      {
         path: 'registers',
         component: RegistersComponent
       },
